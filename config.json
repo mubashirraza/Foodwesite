@@ -1,0 +1,34 @@
+{
+    // time between each check (seconds)
+    "default-internal-time":60,
+    // 1 -> Email
+    // 2 -> IFTTT
+    // 3 -> Telegram
+    "send_Mode":3,
+    "email": {
+        "smtp_url": "smtp.gmail.com:587",
+        // sender gmail
+        "sender": "fortrial0011@gmail.com",
+        "sender-password": "Olaola1@",
+        // receivers emails (full format, can be mutiple)
+        "receivers": ["iamgamer786@gmail.com"]
+    },
+    "IFTTT": {
+        "key": "IFTTT_KEY",
+        "eventName": "IFTTT_EVENT_NAME"
+    },
+    "Telegram": {
+        "botToken": "1038121662:AAF5mT5Zi4_gQJ9i2gD0DD6MvSsfcfcC0Fk",
+        "chatId": "-434606690"
+    },
+    // amazon base url
+    "amazon-base_url": "https://www.amazon.in/dp/",
+    "xpath_selector" : {
+        "price": "//*[@id='priceblock_ourprice']",
+        "productname": "//span[@id='productTitle']"
+    },
+    "item-to-parse": [
+        // item id , your expected price, productname(optional)
+        ["B07QNQJC9D", 140,"shoes"]
+    ]
+}
